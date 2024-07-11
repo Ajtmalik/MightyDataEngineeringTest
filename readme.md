@@ -6,7 +6,7 @@ The sample dataset that we have managed acquire exists of patient data, procedur
 
 We would like to get a more accurate, and live reporting of this data. In the past the excel files were fine, but nowadays its becoming too much and therefore harder to read. Some of our Program managers are struggling to know what is what. For the client reporting we are not always allowed to show them all the data, and since we are hosting the data we are not allowed to share personal details. Some clients also request an extract of the patient data specific to them. 
 
-We are currently in the process of setting up a database connection to tableau, since we already have a salesforce account and tableau can be used for reporting. We have an airbyte instance to run a few etls on a daily basis to a reporting data warehouse (postrgres database). This database is also one which we are connecting to tableau. We already have some way of creating excel files and providing them to our clients. Most of our infratstructure runs on AWS, and we use python and SQL as our main languages for many applications and data analysis. We have started a transition to use DBT in stead of SQL, but Rome was not build in a day. 
+We are currently in the process of setting up a database connection to tableau, since we already have a salesforce account and tableau can be used for reporting. We have an airbyte instance to run a few etls on a daily basis to a reporting data warehouse (postrgres database). This database is also one which we are connecting to tableau. We already have some way of creating excel files and providing them to our clients. Most of our infratstructure runs on AWS, and we use python and SQL as our main languages for many applications and data analysis. We have started a transition to use DBT in stead of SQL, but Rome was not built in a day. 
 
 ## Task 1: Data Cleaning
 
@@ -24,15 +24,15 @@ please include a small reasoning in code, to explain the purpose of use and reas
 
 extract the data from input, transform it (specifically for procedures.csv) and load it into a relational database. It should suffice to only do the cleaning from task one, but do take into account the effects it has on the other data. Where possible normalize the data even more.
 
-finally using this data write a query to rank the payers, by costs payed. Write a query to get the top 5 highest costing patients, and a querry to get the top 5 most expensive procedures on a daily basis (median). 
+finally use this data to write a query to rank the payers, by costs payed. Write a query to get the top 5 highest costing patients, and a query to get the top 5 most expensive procedures on a daily basis (median). 
 
 
 ## Task 3 Data marts
 
-After succesfully extracting the data and loading it into a relational database, could you create two new separate data marts about the data from both of our clients (united healthcare and humana). If you feel the need/usefullness of staging tables, you can use them. Please use as much detail as possible for the data mart, but try and keep it clean. It is preferred to have the least amount of duplicates, and in all honesty we do not really care about patients, only for those who have to pay for procedures themselves we do care about them. 
+After succesfully extracting the data and loading it into a relational database, create two new separate data marts about the data from both of our clients (united healthcare and humana). If you feel the need/usefullness of staging tables, you can use them. Please use as much detail as possible for the data mart, but try and keep it clean. It is preferred to have the least amount of duplicates, and in all honesty we do not really care about patients, but we do care about those who have to pay for procedures themselves.
 
 ## Notes
-We know some of the questions are vague and maybe impossible todo given the tools you are using. This is on purpose. We want to see how you would handle these situations, therefore it is okay to include an explanation of the process/solution that you would suggest had you been using the tools that do support these requirements. 
+We know some of the questions are vague and maybe impossible to do given the tools you are using. This is on purpose. We want to see how you would handle these situations, therefore it is okay to include an explanation of the process/solution that you would suggest had you been using the tools that do support these requirements. 
 
 ## Instructions
 
