@@ -1,0 +1,6 @@
+db_data_airflow/
+db_data_main/
+logs/
+plugins/
+output/
+*.pyc
